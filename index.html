@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Pinnacle Oil & Gas Limited</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Style for the countdown timer */
+			#countdown {
+				font-size: 30px;
+				text-align: center;
+				margin-top: 10px;
+				color: #ff753a;
+				font-family: 'Bebas Neue', regular;
+			}
+			#progress-text {
+				font-size: 20px; /* Adjust the font size as needed */
+				text-align: center;
+				margin-top: 10px;
+				color: #9f0000c1;
+				font-family: 'Bebas Neue', regular;
+    		}
+		</style>
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">Pinnacle Oil & Gas Limited</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							
+							<li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+					
+				</section>
+
+			<!-- Main -->
+			<section id="main" class="container">
+				<section class="box special">
+					
+					<h3><strong>Your Suggestions And Opinions Are Treated As Priority</strong></h3>
+					<hr>
+					<script>
+						document.addEventListener("DOMContentLoaded", function() {
+						  const form = document.getElementById("contactform");
+						  form.addEventListener("submit", function(event) {
+							event.preventDefault(); // Prevent the form from submitting normally
+							
+							// Perform form submission
+							fetch(form.action, {
+							  method: form.method,
+							  body: new FormData(form)
+							})
+							.then(response => response.json())
+							.then(data => {
+							  // Handle the form submission response
+							  if (data.result === "success") {
+								// Redirect to the specified URL
+								window.location.href = data.redirect;
+							  } else {
+								// Handle error case
+								console.error("Form submission error:", data.error);
+							  }
+							})
+							.catch(error => {
+							  console.error("Form submission error:", error);
+							});
+						  });
+						});
+					  </script>
+
+
+					<form method="post" action="https://script.google.com/macros/s/AKfycbwgdJr9M1rPUH9Ey1NusiJITDjznNr81DprLCaNOtuXioqI3n9mcJCPXd2eL48RF851/exec" name="contactform" id="contactform">
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-6 col-12-mobilep">
+								<h1 align="left"><b>Work Location</b></h1>
+								<select class="form-control" name="location" id="location" required>
+									<option value="" disabled selected>Choose an answer</option>
+									<option value="Head Office">Head Office</option>
+									<option value="FZE Lekki">FZE Lekki</option>
+									<option value="Ilasa">Ilasa</option>
+									<option value="Warri">Warri</option>
+								</select>
+							</div>
+							<div class="col-6 col-12-mobilep">
+								<h1 align="left"><b>What Is Your Job Role?</b></h1>
+								<select class="form-control" name="role" id="role" required>
+									<option value="" disabled selected>Choose an answer</option>
+									<option value="Admin/HR">Admin/HR</option>
+									<option value="Legal">Legal</option>
+									<option value="Shipping">Shipping</option>
+									<option value="Oerations / Engineering / HSE">Operations / Engineering / HSE</option>
+									<option value="IT">IT</option>
+									<option value="Finance / Accounts / Audit">Finance / Accounts / Audit</option>
+									<option value="Sales & Marketing">Sales & Marketing</option>
+								</select>
+							</div>
+							<div class="col-12 col-12-mobilep">
+								<h1 align="left"><b>Please Share Your Feedback, Comments And Suggestions For Pinnacle</b></h1>
+								<textarea class="form-control" name="message" id="message" placeholder="Your Email" rows="4" required></textarea>
+							</div>
+						</div>
+						<br>
+						<br>
+							<div class="col-12">
+								<ul class="actions special">
+									<li><input type="submit" class="button btn-primary" id="submit" value="Submit Your Response" /></li>
+								</ul>
+							</div>
+						</form>
+				</section>
+			</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
